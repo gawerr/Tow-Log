@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F30F0E827B77F9A008652E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F30F0E727B77F9A008652E0 /* AppDelegate.swift */; };
+		6F30F0EA27B77F9A008652E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F30F0E927B77F9A008652E0 /* SceneDelegate.swift */; };
+		6F30F0EC27B77F9A008652E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F30F0EB27B77F9A008652E0 /* ViewController.swift */; };
+		6F30F0EF27B77F9A008652E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F30F0ED27B77F9A008652E0 /* Main.storyboard */; };
+		6F30F0F127B77F9C008652E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F30F0F027B77F9C008652E0 /* Assets.xcassets */; };
+		6F30F0F427B77F9C008652E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F30F0F227B77F9C008652E0 /* LaunchScreen.storyboard */; };
+		6F30F0FF27B77F9C008652E0 /* Tow_LogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F30F0FE27B77F9C008652E0 /* Tow_LogTests.swift */; };
+		6F30F10927B77F9C008652E0 /* Tow_LogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F30F10827B77F9C008652E0 /* Tow_LogUITests.swift */; };
+		6F30F10B27B77F9C008652E0 /* Tow_LogUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F30F10A27B77F9C008652E0 /* Tow_LogUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F30F0FB27B77F9C008652E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F30F0DC27B77F9A008652E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F30F0E327B77F9A008652E0;
+			remoteInfo = "Tow Log";
+		};
+		6F30F10527B77F9C008652E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F30F0DC27B77F9A008652E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F30F0E327B77F9A008652E0;
+			remoteInfo = "Tow Log";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6F30F0E427B77F9A008652E0 /* Tow Log.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tow Log.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F30F0E727B77F9A008652E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6F30F0E927B77F9A008652E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6F30F0EB27B77F9A008652E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6F30F0EE27B77F9A008652E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6F30F0F027B77F9C008652E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F30F0F327B77F9C008652E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6F30F0F527B77F9C008652E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F30F0FA27B77F9C008652E0 /* Tow LogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tow LogTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F30F0FE27B77F9C008652E0 /* Tow_LogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tow_LogTests.swift; sourceTree = "<group>"; };
+		6F30F10427B77F9C008652E0 /* Tow LogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tow LogUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F30F10827B77F9C008652E0 /* Tow_LogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tow_LogUITests.swift; sourceTree = "<group>"; };
+		6F30F10A27B77F9C008652E0 /* Tow_LogUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tow_LogUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F30F0E127B77F9A008652E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F30F0F727B77F9C008652E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F30F10127B77F9C008652E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F30F0DB27B77F9A008652E0 = {
+			isa = PBXGroup;
+			children = (
+				6F30F0E627B77F9A008652E0 /* Tow Log */,
+				6F30F0FD27B77F9C008652E0 /* Tow LogTests */,
+				6F30F10727B77F9C008652E0 /* Tow LogUITests */,
+				6F30F0E527B77F9A008652E0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6F30F0E527B77F9A008652E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F30F0E427B77F9A008652E0 /* Tow Log.app */,
+				6F30F0FA27B77F9C008652E0 /* Tow LogTests.xctest */,
+				6F30F10427B77F9C008652E0 /* Tow LogUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F30F0E627B77F9A008652E0 /* Tow Log */ = {
+			isa = PBXGroup;
+			children = (
+				6F30F0E727B77F9A008652E0 /* AppDelegate.swift */,
+				6F30F0E927B77F9A008652E0 /* SceneDelegate.swift */,
+				6F30F0EB27B77F9A008652E0 /* ViewController.swift */,
+				6F30F0ED27B77F9A008652E0 /* Main.storyboard */,
+				6F30F0F027B77F9C008652E0 /* Assets.xcassets */,
+				6F30F0F227B77F9C008652E0 /* LaunchScreen.storyboard */,
+				6F30F0F527B77F9C008652E0 /* Info.plist */,
+			);
+			path = "Tow Log";
+			sourceTree = "<group>";
+		};
+		6F30F0FD27B77F9C008652E0 /* Tow LogTests */ = {
+			isa = PBXGroup;
+			children = (
+				6F30F0FE27B77F9C008652E0 /* Tow_LogTests.swift */,
+			);
+			path = "Tow LogTests";
+			sourceTree = "<group>";
+		};
+		6F30F10727B77F9C008652E0 /* Tow LogUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6F30F10827B77F9C008652E0 /* Tow_LogUITests.swift */,
+				6F30F10A27B77F9C008652E0 /* Tow_LogUITestsLaunchTests.swift */,
+			);
+			path = "Tow LogUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F30F0E327B77F9A008652E0 /* Tow Log */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F30F10E27B77F9C008652E0 /* Build configuration list for PBXNativeTarget "Tow Log" */;
+			buildPhases = (
+				6F30F0E027B77F9A008652E0 /* Sources */,
+				6F30F0E127B77F9A008652E0 /* Frameworks */,
+				6F30F0E227B77F9A008652E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tow Log";
+			productName = "Tow Log";
+			productReference = 6F30F0E427B77F9A008652E0 /* Tow Log.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6F30F0F927B77F9C008652E0 /* Tow LogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F30F11127B77F9C008652E0 /* Build configuration list for PBXNativeTarget "Tow LogTests" */;
+			buildPhases = (
+				6F30F0F627B77F9C008652E0 /* Sources */,
+				6F30F0F727B77F9C008652E0 /* Frameworks */,
+				6F30F0F827B77F9C008652E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F30F0FC27B77F9C008652E0 /* PBXTargetDependency */,
+			);
+			name = "Tow LogTests";
+			productName = "Tow LogTests";
+			productReference = 6F30F0FA27B77F9C008652E0 /* Tow LogTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6F30F10327B77F9C008652E0 /* Tow LogUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F30F11427B77F9C008652E0 /* Build configuration list for PBXNativeTarget "Tow LogUITests" */;
+			buildPhases = (
+				6F30F10027B77F9C008652E0 /* Sources */,
+				6F30F10127B77F9C008652E0 /* Frameworks */,
+				6F30F10227B77F9C008652E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F30F10627B77F9C008652E0 /* PBXTargetDependency */,
+			);
+			name = "Tow LogUITests";
+			productName = "Tow LogUITests";
+			productReference = 6F30F10427B77F9C008652E0 /* Tow LogUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F30F0DC27B77F9A008652E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					6F30F0E327B77F9A008652E0 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					6F30F0F927B77F9C008652E0 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 6F30F0E327B77F9A008652E0;
+					};
+					6F30F10327B77F9C008652E0 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 6F30F0E327B77F9A008652E0;
+					};
+				};
+			};
+			buildConfigurationList = 6F30F0DF27B77F9A008652E0 /* Build configuration list for PBXProject "Tow Log" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6F30F0DB27B77F9A008652E0;
+			productRefGroup = 6F30F0E527B77F9A008652E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F30F0E327B77F9A008652E0 /* Tow Log */,
+				6F30F0F927B77F9C008652E0 /* Tow LogTests */,
+				6F30F10327B77F9C008652E0 /* Tow LogUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F30F0E227B77F9A008652E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F30F0F427B77F9C008652E0 /* LaunchScreen.storyboard in Resources */,
+				6F30F0F127B77F9C008652E0 /* Assets.xcassets in Resources */,
+				6F30F0EF27B77F9A008652E0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F30F0F827B77F9C008652E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F30F10227B77F9C008652E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F30F0E027B77F9A008652E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F30F0EC27B77F9A008652E0 /* ViewController.swift in Sources */,
+				6F30F0E827B77F9A008652E0 /* AppDelegate.swift in Sources */,
+				6F30F0EA27B77F9A008652E0 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F30F0F627B77F9C008652E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F30F0FF27B77F9C008652E0 /* Tow_LogTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F30F10027B77F9C008652E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F30F10B27B77F9C008652E0 /* Tow_LogUITestsLaunchTests.swift in Sources */,
+				6F30F10927B77F9C008652E0 /* Tow_LogUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F30F0FC27B77F9C008652E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F30F0E327B77F9A008652E0 /* Tow Log */;
+			targetProxy = 6F30F0FB27B77F9C008652E0 /* PBXContainerItemProxy */;
+		};
+		6F30F10627B77F9C008652E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F30F0E327B77F9A008652E0 /* Tow Log */;
+			targetProxy = 6F30F10527B77F9C008652E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6F30F0ED27B77F9A008652E0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F30F0EE27B77F9A008652E0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6F30F0F227B77F9C008652E0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F30F0F327B77F9C008652E0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6F30F10C27B77F9C008652E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6F30F10D27B77F9C008652E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F30F10F27B77F9C008652E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BQCB5ALVG7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Tow Log/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.gawer.Tow-Log";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6F30F11027B77F9C008652E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BQCB5ALVG7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Tow Log/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.gawer.Tow-Log";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6F30F11227B77F9C008652E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BQCB5ALVG7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.gawer.Tow-LogTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tow Log.app/Tow Log";
+			};
+			name = Debug;
+		};
+		6F30F11327B77F9C008652E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BQCB5ALVG7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.gawer.Tow-LogTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tow Log.app/Tow Log";
+			};
+			name = Release;
+		};
+		6F30F11527B77F9C008652E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BQCB5ALVG7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.gawer.Tow-LogUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Tow Log";
+			};
+			name = Debug;
+		};
+		6F30F11627B77F9C008652E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BQCB5ALVG7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.gawer.Tow-LogUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Tow Log";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F30F0DF27B77F9A008652E0 /* Build configuration list for PBXProject "Tow Log" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F30F10C27B77F9C008652E0 /* Debug */,
+				6F30F10D27B77F9C008652E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F30F10E27B77F9C008652E0 /* Build configuration list for PBXNativeTarget "Tow Log" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F30F10F27B77F9C008652E0 /* Debug */,
+				6F30F11027B77F9C008652E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F30F11127B77F9C008652E0 /* Build configuration list for PBXNativeTarget "Tow LogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F30F11227B77F9C008652E0 /* Debug */,
+				6F30F11327B77F9C008652E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F30F11427B77F9C008652E0 /* Build configuration list for PBXNativeTarget "Tow LogUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F30F11527B77F9C008652E0 /* Debug */,
+				6F30F11627B77F9C008652E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6F30F0DC27B77F9A008652E0 /* Project object */;
+}
