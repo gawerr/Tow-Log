@@ -16,6 +16,8 @@
 		6F30F0FF27B77F9C008652E0 /* Tow_LogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F30F0FE27B77F9C008652E0 /* Tow_LogTests.swift */; };
 		6F30F10927B77F9C008652E0 /* Tow_LogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F30F10827B77F9C008652E0 /* Tow_LogUITests.swift */; };
 		6F30F10B27B77F9C008652E0 /* Tow_LogUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F30F10A27B77F9C008652E0 /* Tow_LogUITestsLaunchTests.swift */; };
+		6F890D2827B978720088AA87 /* TowTicketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F890D2727B978720088AA87 /* TowTicketModel.swift */; };
+		6F890D2A27B9801B0088AA87 /* TowTicketData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F890D2927B9801B0088AA87 /* TowTicketData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		6F30F10427B77F9C008652E0 /* Tow LogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tow LogUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F30F10827B77F9C008652E0 /* Tow_LogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tow_LogUITests.swift; sourceTree = "<group>"; };
 		6F30F10A27B77F9C008652E0 /* Tow_LogUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tow_LogUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6F890D2727B978720088AA87 /* TowTicketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TowTicketModel.swift; sourceTree = "<group>"; };
+		6F890D2927B9801B0088AA87 /* TowTicketData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TowTicketData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				6F30F0F027B77F9C008652E0 /* Assets.xcassets */,
 				6F30F0F227B77F9C008652E0 /* LaunchScreen.storyboard */,
 				6F30F0F527B77F9C008652E0 /* Info.plist */,
+				6F890D2727B978720088AA87 /* TowTicketModel.swift */,
+				6F890D2927B9801B0088AA87 /* TowTicketData.swift */,
 			);
 			path = "Tow Log";
 			sourceTree = "<group>";
@@ -258,6 +264,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F890D2A27B9801B0088AA87 /* TowTicketData.swift in Sources */,
+				6F890D2827B978720088AA87 /* TowTicketModel.swift in Sources */,
 				6F30F0EC27B77F9A008652E0 /* ViewController.swift in Sources */,
 				6F30F0E827B77F9A008652E0 /* AppDelegate.swift in Sources */,
 				6F30F0EA27B77F9A008652E0 /* SceneDelegate.swift in Sources */,
@@ -445,7 +453,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -456,7 +464,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -473,7 +481,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -484,7 +492,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
