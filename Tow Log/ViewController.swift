@@ -9,14 +9,21 @@ import UIKit
 
 // location model is TowTicketModel
 
+class TicketViewCell: UITableViewCell {
+    
+    @IBOutlet weak var TicketNumberLable: UILabel!
+    @IBOutlet weak var CategoryLable: UILabel!
+    
+}
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, TowTicketDataProtocol  {
+
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, TowTicketPHPConnectorProtocol  {
 
     //Properties
     var feedItems: NSArray = NSArray()
     var selectedLocation : TowTicketModel = TowTicketModel()
     @IBOutlet weak var listTableView: UITableView!
-
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -26,9 +33,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.listTableView.delegate = self
         self.listTableView.dataSource = self
         
-        let TowTicketData = TowTicketData()
-        TowTicketData.delegate = self
-        TowTicketData.downloadItems()
+        let TowTicketPHPConnector = TowTicketPHPConnector()
+        TowTicketPHPConnector.delegate = self
+        TowTicketPHPConnector.downloadItems()
     }
 
     func itemsDownloaded(items: NSArray) {
@@ -39,21 +46,26 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
        
        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
            // Return the number of feed items
+           print("Items count", feedItems.count)
            return feedItems.count
            
        }
        
        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
            
-           // Retrieve cell
-           let cellIdentifier: String = "BasicCell"
-           let myCell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier)!
            // Get the location to be shown
-           let item: TowTicketModel = feedItems[indexPath.row] as! TowTicketModel
-           // Get references to labels of cell
-           myCell.textLabel!.text = item.ticket_number
+           let opentickets: TowTicketModel = feedItems[indexPath.row] as! TowTicketModel
            
-           return myCell
+           let cell = self.listTableView.dequeueReusableCell(withIdentifier: "TicketCell", for: indexPath) as! TicketViewCell
+
+           
+           cell.TicketNumberLable.text = opentickets.ticket_number
+           cell.CategoryLable.text = opentickets.category
+        
+           
+           
+           return cell
+           
        }
     
     
