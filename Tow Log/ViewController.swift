@@ -13,7 +13,11 @@ class TicketViewCell: UITableViewCell {
     
     @IBOutlet weak var TicketNumberLable: UILabel!
     @IBOutlet weak var CategoryLable: UILabel!
-    
+    @IBOutlet weak var CFIGLable: UILabel!
+    @IBOutlet weak var GliderLable: UILabel!
+    @IBOutlet weak var PilotLable: UILabel!
+    @IBOutlet weak var TowSpeedLable: UILabel!
+    @IBOutlet weak var AltRequiredLable: UILabel!
 }
 
 
@@ -61,9 +65,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
            
            cell.TicketNumberLable.text = opentickets.ticket_number
            cell.CategoryLable.text = opentickets.category
+           cell.CFIGLable.text = opentickets.cfig
+           cell.GliderLable.text = opentickets.glider
+           cell.PilotLable.text = opentickets.pilot
+           cell.TowSpeedLable.text = opentickets.tow_speed
+           cell.AltRequiredLable.text = opentickets.alt_required
+           
         
-           
-           
            return cell
            
        }
