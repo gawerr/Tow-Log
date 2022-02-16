@@ -237,6 +237,7 @@
                                             <outlet property="PilotLable" destination="IhB-4a-xFz" id="iHw-aV-jSb"/>
                                             <outlet property="TicketNumberLable" destination="UO4-0A-vbm" id="p4q-am-cP4"/>
                                             <outlet property="TowSpeedLable" destination="EhP-7j-jJn" id="oFe-2V-K4l"/>
+                                            <segue destination="s8Q-pu-Amq" kind="showDetail" id="vTC-Mb-n8Q"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -252,6 +253,29 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="41.481481481481481" y="73.888888888888886"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TQQ-uk-bi6">
+            <objects>
+                <viewController id="s8Q-pu-Amq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UbD-Ss-zw3">
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FlJ-D6-eUi">
+                                <rect key="frame" x="589" y="37" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZTA-49-y2r"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OUb-xq-c2K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="699" y="74"/>
         </scene>
     </scenes>
     <resources>
