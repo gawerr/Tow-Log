@@ -7,29 +7,11 @@
 
 import UIKit
 
-// location model is TowTicketModel
-
-class TicketViewCell: UITableViewCell {
-    
-    @IBOutlet weak var TicketNumberLable: UILabel!
-    @IBOutlet weak var GliderLable: UILabel!
-    @IBOutlet weak var CategoryLable: UILabel!
-    @IBOutlet weak var FlightBriefLable: UILabel!
-    @IBOutlet weak var PilotLable: UILabel!
-    @IBOutlet weak var CFIGLable: UILabel!
-    @IBOutlet weak var GuestLable: UILabel!
-    @IBOutlet weak var TowSpeedLable: UILabel!
-    @IBOutlet weak var AltRequiredLable: UILabel!
-    @IBOutlet weak var RemarksLable: UILabel!
-    @IBOutlet weak var ReleaseAltTextField: UITextField!
-    
-}
-    
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, TowTicketPHPConnectorProtocol  {
 
     //Properties
-    var feedItems: NSArray = NSArray()
+    var feedItems: NSMutableArray = NSMutableArray()
     var selectedLocation : TowTicketModel = TowTicketModel()
     @IBOutlet weak var listTableView: UITableView!
         
@@ -46,8 +28,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         TowTicketPHPConnector.downloadItems()
     }
     
-    func itemsDownloaded(items: NSArray) {
-           
+    @IBAction func RefreshTickets(_ sender: Any) {
+        print ("Send refresh")
+        self.viewDidLoad()
+        self.listTableView.reloadData()
+    }
+    
+    func itemsDownloaded(items: NSMutableArray) {
         feedItems = items
         self.listTableView.reloadData()
     }
@@ -89,8 +76,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     // the button action function
     @IBAction func uploadData(_ sender: Any) {
-        
-    
+       
         let url = NSURL(string: "http://192.168.1.212/recieve-altrelease.php")
             
         var request = URLRequest(url: url! as URL)
@@ -99,10 +85,20 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // starting POST string with a secretWord
         var dataString = "secretWord=44fdcv8jf3"
             
-        // the POST string has entries separated by &
-        let releaseAlt = TicketViewCell()
+        // the POST string has entries separated by & add items as name and value
         
-        dataString = dataString + "&alt_release=\(releaseAlt.ReleaseAltTextField.text!)" // add items as name and value
+        // Test VARs
+        let ticket_number = "52"
+        let tow_plane = "N6782Z"
+        let tow_pilot_member_id = "1059"
+        let tow_pilot = "Randy Gawer"
+        let alt_release = "8500"
+        
+        dataString = dataString + "&ticket_number=\(ticket_number)"
+        dataString = dataString + "&tow_plane=\(tow_plane)"
+        dataString = dataString + "&tow_pilot_member_id=\(tow_pilot_member_id)"
+        dataString = dataString + "&tow_pilot=\(tow_pilot)"
+        dataString = dataString + "&alt_release=\(alt_release)"
             
         // convert the post string to utf8 format
         let dataD = dataString.data(using: .utf8) // convert to utf8 string
@@ -116,8 +112,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         if error != nil {
                         
         // display an alert if there is an error inside the DispatchQueue.main.async
-        DispatchQueue.main.async
-        {
+        DispatchQueue.main.async {
             let alert = UIAlertController(title: "Upload Didn't Work?", message: "Looks like the connection to the server didn't work.  Do you have Internet access?", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
                 self.present(alert, animated: true, completion: nil)
@@ -133,8 +128,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
                             // display an alert if no error and database insert worked (return = 1) inside the DispatchQueue.main.async
 
-                                DispatchQueue.main.async
-                                {
+                                DispatchQueue.main.async {
                                     let alert = UIAlertController(title: "Upload OK?", message: "Looks like the upload and insert into the database worked.", preferredStyle: .alert)
                                     alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
                                     self.present(alert, animated: true, completion: nil)
@@ -142,8 +136,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                         } else {
                             // display an alert if an error and database insert didn't worked (return != 1) inside the DispatchQueue.main.async
 
-                                DispatchQueue.main.async
-                                {
+                                DispatchQueue.main.async {
 
                                 let alert = UIAlertController(title: "Upload Didn't Work", message: "Looks like the insert into the database did not worked.", preferredStyle: .alert)
                                 alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))

@@ -7,19 +7,14 @@
 
 import Foundation
 
-// home model
-
 protocol TowTicketPHPConnectorProtocol: AnyObject {
-    func itemsDownloaded(items: NSArray)
+    func itemsDownloaded(items: NSMutableArray)
 }
 
 
 class TowTicketPHPConnector: NSObject, URLSessionDataDelegate {
     
-    //properties
-    
     weak var delegate: TowTicketPHPConnectorProtocol!
-    
     var data = Data()
     
     // path to to towtickets service
