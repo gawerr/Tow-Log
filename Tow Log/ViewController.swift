@@ -75,7 +75,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     // the button action function
-    @IBAction func uploadData(_ sender: Any) {
+    @IBAction func updateTowTicket(_ sender: Any) {
        
 //        let url = NSURL(string: "http://192.168.1.212/recieve-altrelease.php")
         let url = NSURL(string: "http://devpi.local/recieve-altrelease.php")
@@ -89,11 +89,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // the POST string has entries separated by & add items as name and value
         
         // Test VARs
-        let ticket_number = "52"
+        let ticket_number = "64"
         let tow_plane = "N6782Z"
         let tow_pilot_member_id = "1059"
         let tow_pilot = "Randy Gawer"
-        let alt_release = "8500"
+        let alt_release = "1200"
         
         dataString = dataString + "&ticket_number=\(ticket_number)"
         dataString = dataString + "&tow_plane=\(tow_plane)"
@@ -114,7 +114,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                         
         // display an alert if there is an error inside the DispatchQueue.main.async
         DispatchQueue.main.async {
-            let alert = UIAlertController(title: "Upload Didn't Work?", message: "Looks like the connection to the server didn't work.  Do you have Internet access?", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Tow Ticket NOT UPDATED", message: "Check internet access?", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
                 self.present(alert, animated: true, completion: nil)
         }
@@ -130,7 +130,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                             // display an alert if no error and database insert worked (return = 1) inside the DispatchQueue.main.async
 
                                 DispatchQueue.main.async {
-                                    let alert = UIAlertController(title: "Upload OK?", message: "Looks like the upload and insert into the database worked.", preferredStyle: .alert)
+                                    let alert = UIAlertController(title: "Tow Ticket Updated", message: "", preferredStyle: .alert)
                                     alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
                                     self.present(alert, animated: true, completion: nil)
                                 }
@@ -139,7 +139,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
                                 DispatchQueue.main.async {
 
-                                let alert = UIAlertController(title: "Upload Didn't Work", message: "Looks like the insert into thedatabase did not worked.", preferredStyle: .alert)
+                                let alert = UIAlertController(title: "Tow Ticket NOT UPDATED", message: "DATABASE unavailable", preferredStyle: .alert)
                                     alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
                                     self.present(alert, animated: true, completion: nil)
                             }
