@@ -77,8 +77,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     // the button action function
     @IBAction func uploadData(_ sender: Any) {
        
-        let url = NSURL(string: "http://192.168.1.212/recieve-altrelease.php")
-            
+//        let url = NSURL(string: "http://192.168.1.212/recieve-altrelease.php")
+        let url = NSURL(string: "http://devpi.local/recieve-altrelease.php")
+
         var request = URLRequest(url: url! as URL)
         request.httpMethod = "POST"
         
@@ -138,17 +139,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
                                 DispatchQueue.main.async {
 
-                                let alert = UIAlertController(title: "Upload Didn't Work", message: "Looks like the insert into the database did not worked.", preferredStyle: .alert)
-                                alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-                                self.present(alert, animated: true, completion: nil)
-                                }
+                                let alert = UIAlertController(title: "Upload Didn't Work", message: "Looks like the insert into thedatabase did not worked.", preferredStyle: .alert)
+                                    alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                                    self.present(alert, animated: true, completion: nil)
                             }
                         }
                     }
                 }
-                uploadJob.resume()
             }
+        uploadJob.resume()
         }
-
+    }
 
 }

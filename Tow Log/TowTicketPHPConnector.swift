@@ -18,8 +18,8 @@ class TowTicketPHPConnector: NSObject, URLSessionDataDelegate {
     var data = Data()
     
     // path to to towtickets service
-//    let urlPath: String = "http://devpi.local/service-towtickets.php"
-    let urlPath: String = "http://192.168.1.212/service-towtickets.php"
+    let urlPath: String = "http://devpi.local/service-towtickets.php"
+//    let urlPath: String = "http://192.168.1.212/service-towtickets.php"
     
     func downloadItems() {
         
